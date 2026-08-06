@@ -1,6 +1,6 @@
 # chudfetch
 chudfetch is a CLI util like fastfetch but cooler
-![chudfetch](images/chudfetch.png)
+![chudfetch](images/chudfetch1.png)
 
 ## installation
 
