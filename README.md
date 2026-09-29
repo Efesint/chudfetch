@@ -29,3 +29,4 @@ chmod +x ~/bin/chudfetch
 
 # LICENSE 
 This product is released under the GNU General Public License v3.0
+<br> see in LICENSE...
