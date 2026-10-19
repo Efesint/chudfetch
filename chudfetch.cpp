@@ -277,7 +277,8 @@ long mem_a = 0;
         }
     }
 
-    if (f6_o) // i dont wanna fix this shit do it yourself
+    if (f6_o) 
+//i dont wanna fix this shit do it yourself
     {
         std::getline(f6, mac);
         mac.erase(std::remove(mac.begin(), mac.end(), '\n'), mac.end());
