@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import psutil
 import os 
 import platform
@@ -5,7 +6,6 @@ import socket
 import subprocess
 import shutil
 import getpass
-import socket
 from datetime import datetime
 
 # hell yea i rewrite this shit in python

@@ -1,10 +1,67 @@
 # chudfetch
-chudfetch is a CLI util like fastfetch but cooler
 ![chudfetch](images/chudfetch.png)
+
+## requirements
+
+- **linux-based operating system**
+- **python 3.6+**
+- **psutil**
+- **utf-8 terminal**
+- **git**
+
+runtime data sources:
+
+| field | source |
+|---|---|
+| user | `getpass.getuser()` |
+| hostname | `platform.node()` |
+| kernel | `platform.release()` |
+| cpu | `platform.processor()` |
+| ram | `psutil.virtual_memory()` |
+| disk | `shutil.disk_usage("/")` |
+| processes | `len(psutil.pids())` |
+| shell | `$SHELL` |
+| arch | `platform.machine()` |
+| ip | UDP socket to `8.8.8.8:80` |
+| date | `datetime.now()` |
 
 ## installation
 
- IN DEV NOW, REWRITE FROM CPP TO PYTHON, NOT A VAILABLE PROJECT YET
+### 1. get the code
+
+```bash
+git clone https://github.com/Efesint/chudfetch.git
+cd chudfetch
+```
+
+### 2. install psutil
+
+```bash
+# debian
+sudo apt install python3-psutil
+
+# arch / manjaro
+sudo pacman -S python-psutil
+```
+
+or with pip:
+
+```bash
+python3 -m pip install --user psutil
+```
+
+### 3. install the script into `~/.local/bin`
+
+```bash
+mkdir -p ~/.local/bin
+install -m 755 src/chudfetch.py ~/.local/bin/chudfetch
+```
+
+### 4. run it
+
+```bash
+chudfetch
+```
 
 # DISCLAIMER / TERMS OF USE
 
