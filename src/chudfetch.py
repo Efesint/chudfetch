@@ -34,7 +34,7 @@ def disk():
     usage = shutil.disk_usage("/")
     disk_full = round(usage.total / (1024**3), 1)
     disk_free = round(usage.free / (1024**3), 1)
-    return(f"{disk_free}/{disk_full} gb")
+    return(f"{disk_free}/{disk_full}GB")
 
 def proc():
     return len(psutil.pids())
@@ -48,7 +48,7 @@ print(f"{gr}⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀�
 print(f"{gr}⣿⣿⣿⣿⣿⣿⣿⣿⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⡀⠀⢀⠀⠙⣿⣿",f"{gr}kernel{wh}: {kernel}")
 print(f"{gr}⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⣠⣴⣶⣶⣶⣶⣿⣿⣿⣿⣿⣿⣿⣷⡌⣿⣿",f"ram:{wh} {ram()} gb") 
 print(f"{gr}⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⣴⣿⣿⣿⣿⣿⣿⣻⣿⣿⣿⡿⣿⣿⣿⣿⡜⣿",f"cpu:{wh} {cpu()}")
-print(f"{gr}⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⢀⣿⣿⣿⣿⣿⣿⣿⣷⢿⣿⣿⣇⣿⣿⣿⣿⣧⣿",f"disk:{wh} {disk()}")
+print(f"{gr}⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⢀⣿⣿⣿⣿⣿⣿⣿⣷⢿⣿⣿⣇⣿⣿⣿⣿⣧⣿",f"disk:{wh} {disk()} free")
 print(f"{gr}⣿⣿⣿⣿⣿⣿⣿⡇⡆⠀⠀⣸⣿⣯⡉⠙⠛⠿⣿⣿⢺⣿⣿⡇⢿⡿⠿⠛⠉⣿",f"processes:{wh} {proc()}")
 print(f"{gr}⣿⣿⣿⣿⣿⣿⣿⢁⡟⣀⣘⣛⣛⡛⢩⣤⣤⣤⣤⣀⠻⠿⠿⡇⢊⣀⣐⣚⡃⢻",f"shell:{wh} {sh}")
 print(f"{gr}⣿⣿⣿⣿⣿⣿⣿⠸⣧⣽⣿⣿⣿⡇⢼⠰⠀⠈⠙⣻⠆⣾⣷⡆⢘⡋⠉⣽⡇⢸",f"date:{wh} {date}")
